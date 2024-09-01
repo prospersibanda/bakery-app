@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon, faQuote } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const QouteSection = () => {
