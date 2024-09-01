@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import ImproveSection from "./components/ImproveSection";
 import QouteSection from "./components/QouteSection";
 import ChiefsSection from "./components/ChiefsSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <QouteSection/>
         <ChiefsSection/>
       </div>
+      <Footer/>
     </div>
   );
 }
