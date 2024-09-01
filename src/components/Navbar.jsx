@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Sidebar from './Sidebar';
-import { faHome, faList, faCog} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBowlFood, faInfoCircle} from '@fortawesome/free-solid-svg-icons';
 
 const links = [
     {
@@ -10,18 +11,19 @@ const links = [
         icon: faHome
     },
     {
-        name: "Scones",
-        path:"/scones",
-        icon: faList
+        name: "Menu",
+        path:"/menu",
+        icon: faBowlFood
     },
     {
-        name: "Settings",
-        path:"/settings",
-        icon: faCog
+        name: "About",
+        path:"/about",
+        icon: faInfoCircle
     }
 ]
 const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
+    const location = useLocation();
     function closeSidebar(){
         setShowSidebar(false)
     }
@@ -31,11 +33,8 @@ const Navbar = () => {
                 <a href='#' className='logo'>Bakery<span>oo</span>Hub</a>
                 <div className='nav-links'>
                     { links.map(link => (
-                        <a href="#!" key={link.name}>{link.name}</a>
+                        <Link to={link.path} className={location.pathname === link.path ? "active" : "sidebar-link"} key={link.name}>{link.name}</Link>
                     )) }
-                    {/* <a href='#' className='active'>Home</a>
-                    <a href='#'>Scones</a>
-                    <a href='#'>Settings</a> */}
                 </div>
                 <div onClick={() => setShowSidebar(true)} className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}>
                     <div className='bar'></div>
