@@ -1,0 +1,32 @@
+.section.improve-section{
+    .col.img{
+        img{
+            width: 100%;
+            height: 372px;
+        }
+    }
+    .col.typography{
+        padding-left: 1em;
+        .section-item{
+            border-left: .25em solid var(--primary-color) ;
+            margin-bottom: .5em;
+            padding: .1em 0 .1em .5em;
+            color: var(--text-light);
+            font-weight: bold;
+            transform: translateX(100%);
+            opacity: 0;
+            animation: getAnimationDuration(.3s) slideInRight forwards;
+            @for $i from 2 through 7 {
+                &:nth-child(#{$i}){
+                    animation-delay: #{$i * .1}s;
+                }
+            }
+        }
+        .btn{
+            margin-top: .75em;
+        }
+    }
+}
+.main{
+    padding-block: 3vw;
+}
