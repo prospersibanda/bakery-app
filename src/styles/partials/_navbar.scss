@@ -4,7 +4,6 @@
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 998;
     position: fixed;
@@ -15,6 +14,8 @@
         font-weight: bolder;
         color: var(--primary-color);
         text-shadow: 0 1px 3px var(--shadow-color);
+        margin-left: 11.8em;
+        margin-right: 10em;
         span{
             color: var(--text-color);
         }
@@ -128,5 +129,16 @@
             width: 1.2em;
             margin-right: .5em;
         }
+    }
+}
+@media screen and (max-width: 580px) {
+    .navbar{
+        .logo{
+            margin-left: 3em;
+            margin-right: 4em;
+        }
+    }
+    .sidebar-btn{
+        display: block;
     }
 }

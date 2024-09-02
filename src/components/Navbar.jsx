@@ -15,11 +15,6 @@ const links = [
         path:"/menu",
         icon: faBowlFood
     },
-    {
-        name: "About",
-        path:"/about",
-        icon: faInfoCircle
-    }
 ]
 const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -30,7 +25,7 @@ const Navbar = () => {
   return (
         <>
             <div className='navbar container'>
-                <Link to="/" className='logo'>Bakery<span>oo</span>Hub</Link>
+                <Link to="/" className='logo'>Bakery<span>Dough</span>Hub</Link>
                 <div className='nav-links'>
                     { links.map(link => (
                         <Link to={link.path} className={location.pathname === link.path ? "active" : "sidebar-link"} key={link.name}>{link.name}</Link>

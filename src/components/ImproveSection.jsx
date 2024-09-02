@@ -2,12 +2,12 @@ import React from 'react'
 
 const ImproveSection = () => {
   const list = [
-    "Learn New recipes",
-    "Learn New recipes",
-    "Learn New recipes",
-    "Learn New recipes",
-    "Learn New recipes",
-    "Learn New recipes",
+    "Baking with Passion",
+    "Delivering Warmth Daily",
+    "Bringing Joy to Every Bite",
+    " Crafting Fresh Delights",
+    "Embracing Community Spirit",
+    "Serving with a Smile",
   ]
   return (
     <div className='section improve-section'>
@@ -15,7 +15,7 @@ const ImproveSection = () => {
               <img src="/img/b5.jpg" alt="" />
           </div>
           <div className='col typography'>
-              <h1 className='title'>What Are We About</h1>
+              <h1 className='title'>Bakery's Essence</h1>
               { list.map((item, index) => (
                 <p className='section-item' key={index}>{item}</p>
               ))}

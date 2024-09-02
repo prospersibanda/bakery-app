@@ -1,14 +1,15 @@
 import React from 'react';
 import CustomImage from "./CustomImage";
 
-const MenuItems = () => {
+const MenuItems = ({item}) => {
+
   return (
     <div className='menu-card'>
-        <CustomImage imgSrc="/img/b1.jpg" pt="65%"/>
+        <CustomImage imgSrc={item.menuImg} pt="65%"/>
         <div className='menu-card-info'>
-            <img className='auther-img' src="/img/chiefs/chief1.jpg" alt="" />
-            <p className='menu-title'>Scones</p>
-            <p className='menu-desc'>Hi am a scone</p>
+            <img className='auther-img' src={item.autherImg} alt="" />
+            <p className='menu-title'>{item.name}</p>
+            <p className='menu-desc'>{item.desc}</p>
             <a className='view-btn' href="#!">VIEW MENU</a>
         </div>
     </div>

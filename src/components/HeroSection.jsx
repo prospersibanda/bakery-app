@@ -16,7 +16,7 @@ const HeroSection = () => {
     <div className='section hero'>
         <div className='col typography'>
             <h1 className='title'>What Are We About</h1>
-            <p className='info'>BakeryooHub is a place where you can please your soul and tummy with deliciuos foods. And our service is absolutely free. So start exploring now</p>
+            <p className='info'>At BakeryDoughHub, we craft delicious, artisanal baked goods using the finest ingredients to bring joy to every bite. Our passion is to make every occasion special with fresh, flavorful treats.</p>
             <button className='btn'>Explore Now</button>
         </div>
         <div className='col gallery'>
