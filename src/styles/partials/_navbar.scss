@@ -142,3 +142,14 @@
         display: block;
     }
 }
+@media screen and (max-width: 420px) {
+    .navbar{
+        .logo{
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+    .sidebar-btn{
+        display: block;
+    }
+}
