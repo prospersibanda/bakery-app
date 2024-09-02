@@ -12,7 +12,7 @@ const ImproveSection = () => {
   return (
     <div className='section improve-section'>
           <div className='col img'>
-              <img src="/img/b5.jpg" alt="" />
+              <img src="/img/b5.jpg" alt="bakery" />
           </div>
           <div className='col typography'>
               <h1 className='title'>Bakery's Essence</h1>

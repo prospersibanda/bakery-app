@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Sidebar from './Sidebar';
-import { faHome, faBowlFood, faInfoCircle} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBowlFood} from '@fortawesome/free-solid-svg-icons';
 
 const links = [
     {
