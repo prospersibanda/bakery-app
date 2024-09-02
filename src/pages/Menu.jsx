@@ -60,7 +60,7 @@ const Menu = () => {
     },
   ]
   return (
-    <div>
+    <div className='container'>
         <PreviousSection/>
         <div className='menuItems-container'>
            {menuItems.map((item, index) => (

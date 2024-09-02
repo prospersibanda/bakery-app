@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 const PreviousSection = () => {
     const searches = [
-        'pizza',
+        'cake',
         'scones',
-        'biscuits',
+        'muffins',
       ]
   return (
     <div className='previous-searches section'>
